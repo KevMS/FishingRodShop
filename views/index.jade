@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  video(autoplay='autoplay' loop='loop')
+      source(src='/videos/Copyright free video _ closeup video of fishing rod (720p).mp4' type='video/mp4')
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+      .container
+        a.navbar-brand(href='#')
+          span Fishing
+          | Rod
+        button.navbar-toggler(aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.appbtn(href='/login') Login
+    #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+      .carousel-indicators
+        button.active(aria-label='Slide 1' data-bs-slide-to='0' data-bs-target='#carouselExampleCaptions' type='button')
+        button(aria-label='Slide 2' data-bs-slide-to='1' data-bs-target='#carouselExampleCaptions' type='button')
+        button(aria-label='Slide 3' data-bs-slide-to='2' data-bs-target='#carouselExampleCaptions' type='button')
+      .carousel-inner
+        .carousel-item.active
+          .carousel-caption
+            h5.animated.fadeInDown(style='animation-delay: 1s') High-Quality Fishing Rods
+            p.animated.fadeInUp.d-none.d-md-block(style='animation-delay: 2s')
+              | Looking for the perfect fishing rod? Our experienced staff can help you find the best fishing rod to suit your needs.
+            p.animated.fadeInUp(style='animation-delay: 3s')
+              a(href='/login') Shop Now
+        .carousel-item
+          .carousel-caption
+            h5.animated.fadeInDown(style='animation-delay: 1s') Wide Selection of Brands
+            p.animated.fadeInUp.d-none.d-md-block(style='animation-delay: 2s')
+              | We carry a variety of fishing rod brands to choose from. Whether you're a beginner or a pro, we have the right fishing rod for you.
+            p.animated.fadeInUp(style='animation-delay: 3s')
+              a(href='/login') Shop Now
+        .carousel-item
+          .carousel-caption
+            h5.animated.fadeInDown(style='animation-delay: 1s') Expert Advice
+            p.animated.fadeInUp.d-none.d-md-block(style='animation-delay: 2s')
+              | Our team of fishing experts can provide you with tips and advice on how to make the most of your fishing experience.
+            p.animated.fadeInUp(style='animation-delay: 3s')
+              a(href='/login') Learn More
+    button.carousel-control-prev(data-bs-slide='prev' data-bs-target='#carouselExampleCaptions' type='button')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(data-bs-slide='next' data-bs-target='#carouselExampleCaptions' type='button')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+    
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js')
+

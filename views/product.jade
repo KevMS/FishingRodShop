@@ -1,0 +1,99 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+      .container
+        a.navbar-brand(href='#')
+          span Fishing
+          | Rod
+        button.navbar-toggler(aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link(href='/home') Home
+            li.nav-item
+              a.nav-link(href='/about') About
+            li.nav-item
+              a.nav-link(href='/product') Products
+            li.nav-item
+              a.nav-link(href='/contact') Contact
+            li.nav-item
+              a.appbtn(href='/shop') Shop
+            li.nav-item
+              a.logoutbtn(href='/') Logout
+  .br.my-3
+  br
+  section(style='background-color: #eee;')
+  .container.py-5
+    h4.text-center.mb-5
+      strong Product Brands
+    .row
+      .col-lg-4.col-md-12.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded
+          img.w-100.h-100(src='https://lzd-img-global.slatic.net/g/p/67ec5af1286e55220d20433d3c19aac4.jpg_2200x2200q80.jpg_.webp')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $123
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+      .col-lg-4.col-md-6.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded
+          img.w-100.h-100(src='https://cdn.shopify.com/s/files/1/0564/1594/4892/products/AquaxBeginnerpremiumset.jpg?v=1659000723&width=533')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $239
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+      .col-lg-4.col-md-6.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded
+          img.w-100.h-100(src='https://lzd-img-global.slatic.net/g/p/6ba31dd9f53e613655f015bb2c27cae6.jpg_2200x2200q80.jpg_.webp')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $147
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+    .row
+      .col-lg-4.col-md-12.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded.ripple-surface
+          img.w-100.h-100(src='https://cf.shopee.ph/file/1defb4261b1ef0e599de21ece38542cb')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $83
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+      .col-lg-4.col-md-6.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded
+          img.w-100.h-100(src='https://lzd-img-global.slatic.net/g/p/2c99e135960c02a4775c486fc6577111.jpg_2200x2200q80.jpg_.webp')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $106
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+      .col-lg-4.col-md-6.mb-4
+        .bg-image.hover-zoom.ripple.shadow-1-strong.rounded
+          img.w-100.h-100(src='https://ae01.alicdn.com/kf/H569fa94f1a9c408d81ebf244ca4f9075a/Tonality-Fishing-Rod-Ultra-Light-Straight-Curved-Carbon-Fiber-Rod-Baitcasting-Fishing-Pole-for-All-Water.jpg_Q90.jpg_.webp')
+          a(href='#!')
+            .mask.bg-light
+              .d-flex.justify-content-start.align-items-start.h-100
+                h5
+                  span.badge.bg-primary.pt-2.ms-3.mt-3.text-light $58
+            .hover-overlay
+              .mask(style='background-color: rgba(253, 253, 253, 0.15);')
+
+  
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js')
+
